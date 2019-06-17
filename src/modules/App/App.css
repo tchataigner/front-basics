@@ -1,0 +1,81 @@
+body {
+  background-color: #e8eef8;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.notification:before {
+  display: none !important
+}
+
+@media only screen
+and (min-width:768px){
+  .App{
+    display:flex;
+    flex-flow:column;
+  }
+
+  .App .wrapper{
+    display: flex;
+  }
+
+  .App-content{
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  .notification {
+    margin-top: 120px;
+  }
+}
+
+@media only screen
+and (min-width: 769px) and (max-width: 1080px){
+  .notifications-tc {
+    left:80% !important;
+  }
+}
+
+@media only screen
+and (min-width: 1081px){
+  .notifications-tc {
+    left:89% !important;
+  }
+  .outer_lang_select {
+    top: 50px;
+    right: 200px;
+  }
+}
+
+.notifications-tc{
+  top:10% !important;
+}
+
+.notification {
+  top: 10%;
+  background-color: white !important;
+  border-top:0;
+  border-left: 10px !important;
+  box-shadow: 2px 4px 16px -6px gray !important;
+}
+
+.notification-dismiss {
+  color: rgb(111, 111, 111) !important;
+  background-color: unset !important;
+}
+
+.outer_lang_select {
+  position: absolute;
+  top: 20px;
+}
